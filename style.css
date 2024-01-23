@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.home{
+    width: 100%;
+    height: 95vh;
+    background:rgba(0, 0, 0, 0.6) url(background.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center center;
+}
+.home .logo img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 80px 10px black;
+}
+.right .btn a{
+    text-decoration: none;
+    color: white;
+}
+.right{
+    display: flex;
+    gap: 20px;
+}
+.btn2 .btn{
+    background-color: red;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn2 .btn:hover{
+    background-color: rgb(197, 0, 0);
+}
+.btn1 select{
+    border: none;
+    outline: none;
+    background-color: black;
+    border: 0.5px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+}
+.heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+}
+.headerbox{
+    text-align: center;
+}
+.headerbox #h1{
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing:0em;
+}
+.headerbox #h2{
+    font-size: 1.5em;
+    font-weight:500;
+    margin-top: 20px;
+}
+.headerbox #h3{
+    font-size: 1.3em;
+    margin-top: 20px;
+    font-weight:500;
+}
+.getstarted{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.getstarted input{
+    background-color: rgba(36, 36, 36,0.8);
+    padding: 15px 20px;
+    border: 1px solid rgb(150, 150, 150);
+    font-size: 1em;
+    width: 300px;
+    font-weight: bold;
+    border-radius: 5px;
+    color:white;
+}
+.getstarted .bigbtn{
+    padding: 15px 50px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: red;
+    cursor:pointer;
+}
+.getstarted .bigbtn:hover{
+    background-color: rgb(197, 0, 0);
+}
+.line{
+    width: 100%;
+    height:0.5em;
+    background-color: rgb(49, 49, 49);
+}
+.sec{
+  display: flex;
+  padding: 50px 100px;
+}
+.sec .leftsec{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec .rightsec{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftsec #h1{
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing:0em;
+}
+.leftsec #h2{
+    font-size: 1.5em;
+    font-weight:500;
+    margin-top: 20px;
+}
+.rightsec #h1{
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing:0em;
+}
+.rightsec #h2{
+    font-size: 1.5em;
+    font-weight:500;
+    margin-top: 20px;
+}
+.footer{
+    color:  rgba(255,255,255,0.7);
+    padding: 72px 128px;
+}
+.footer .lists{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer .lists ul{
+    list-style: none;
+}
+.footer .lists ul li{
+    margin: 16px 12px;
+}
+.footer .lists ul li a{
+    color: rgba(255,255,255,0.7);
+}
+.footer .footer1{
+    margin: 16px 12px;
+}
+.footer .btn1{
+    margin: 16px 12px;
+}
+.footer .lst{
+    margin: 16px 12px;
+}
+@media only screen and (max-width:1100px) {
+    .sec1,.sec3{
+        flex-direction: column-reverse;
+    }
+    .sec2,.sec4{
+        flex-direction: column;
+    }
+    .getstarted{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .lists{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer{
+        padding: 72px 50px;
+    }
+    .leftsec #h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        letter-spacing:0em;
+    }
+    .leftsec #h2{
+        font-size: 0.8em;
+        font-weight:500;
+        margin-top: 20px;
+    }
+    .rightsec #h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        letter-spacing:0em;
+    }
+    .rightsec #h2{
+        font-size: 0.8em;
+        font-weight:500;
+        margin-top: 20px;
+    }
+    .sec{
+        padding: 20px 30px;
+    }
+    .getstarted .bigbtn{
+        width: 200px;
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+    .getstarted input{
+        width: 200px;
+    }
+    .headerbox #h1{
+        font-size: 2em;
+    }
+    .headerbox #h2{
+        font-size: 1em;
+    }
+    .headerbox #h3{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .right{
+        flex-direction: column;
+    }
+} 
